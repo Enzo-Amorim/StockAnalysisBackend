@@ -7,3 +7,5 @@ Backend using node.js with expo
 To use, go in the https://www.alphavantage.co 
 
 Where you have $ {process.env.ALPHA_VANTAGE_KEY} in routes, place your api key
+
+or create a .env
