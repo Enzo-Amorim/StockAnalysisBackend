@@ -17,10 +17,12 @@ routes.get('/data/:symbol', async (req, res) => {
             month = `0${month}`
         }
         let dayCorrect
-        if(weekday <= 7  && weekday > 0){
+        if(weekday <= 7  && weekday > 1){
             dayCorrect = 1
         }else if(weekday == 0){
             dayCorrect = 2
+        }else if(weekday == 1){
+            dayCorrect = 3
         }
         let day = d.getDate() - dayCorrect;
         
